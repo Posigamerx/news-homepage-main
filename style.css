@@ -1,0 +1,363 @@
+@font-face {
+    font-family: Bold;
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: regular;
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: extrabold;
+    src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+
+
+body{
+    margin: 15px 50px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+
+}
+.menu_icon{
+    display: none;
+}
+.nav_option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav_option ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 45px;
+    align-items: center;
+    font-family: regular;
+}
+.nav_option ul li {
+    opacity: 70%;
+    cursor: pointer;
+}
+.nav_option ul li:hover{
+    color: red;
+    opacity: 50%;
+}
+.hero_page{
+    margin-top: 20px;
+    width: 800px;
+    margin-bottom: 0;
+    
+
+}
+.image_mobile{
+    display: none;
+}
+.hero_page img{
+    width: 100%;
+    height: 300px;
+}
+.h1_writeup{
+    width: 800px;
+    height: 250px;
+   display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.div_1{
+    width: 50%;
+    font-size: 40px;
+    margin: 0;
+    font-family: extrabold;
+}
+.div_1 h1{
+    margin: 0;
+    padding-top: 0px;
+    margin: 0 10px 0 10px;
+}
+.div_2{
+    font-family: regular;
+    width: 50%;
+    margin: 0 10px;
+}
+.div_2 p{
+   font-size: 18px;
+   opacity: 70%;
+   margin: 0 ;
+}
+.div_2 button{
+    width: 150px;
+    height: 45px;
+    border: 0;
+     background-color: red;
+    opacity: 60%;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+.div_2 button:hover{
+   background-color: black;
+   opacity: 100%;
+}
+.section_1{
+    display: flex;
+    margin-bottom: 60px;
+}
+.flex{
+    gap: 20px;
+}
+aside{
+    background-color: black;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 530px;
+}
+.write{
+    padding: 25px 20px 0 20px;
+    color: white;
+}
+.hover{
+    cursor: pointer;
+}
+.write h1{
+  margin: 0;
+  color:#F4A435;
+  font-size: 50px;
+  font-family: extrabold;
+}
+.write h3{
+    color: white;
+    font-size: 20px;
+    font-family: Bold;
+}
+.write h3:hover{
+    color:#F4A435;
+    cursor: pointer;
+}
+.write p{
+    font-size: 15px;
+    opacity: 80%;
+    margin-bottom: 30px;
+    font-family: Regular;
+}
+.line{
+    border: 0.5px solid ;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+.rest_story{
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+    align-items: center;
+   
+}
+.box{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box img{
+    width: 120px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.description{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.description h1{
+    font-family: extrabold;
+    color: #ccc;
+    font-size:30px;
+    margin-top: 0px;
+    margin-bottom:15px;
+
+}
+.description h3{
+    font-family: extrabold;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.description p{
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-family: regular;
+    opacity: 85%;
+}
+
+
+.close_icon{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 20px 10px 0 0;
+}
+    .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 70%;
+    height: 100vh;
+    z-index: 1; 
+    transition: ease-in-out;
+    transition-delay: 5000ms;
+    transition-duration: 3s;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 2; 
+}
+
+
+
+
+
+@media screen and (max-width:450px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 375px;
+    }
+    .navbar{
+        width: 100%;
+        margin: 20px  5px 0px 5px;
+    }
+    .mobile-menu ul{
+        list-style: none;
+        position: absolute;
+        top:15%;
+        gap: 40px;
+        font-family: Regular;
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        left: 0px;
+        width: 100%;
+    }
+    .mobile-menu.active + .overlay {
+    display: block;
+}
+
+
+    .menu_icon{
+        padding-top: 5px;
+        display: block;
+        width: 40px;
+        height: 30px;
+    }
+    .mobile-menu.active {
+        display: block;
+    }
+    .nav_option{
+        
+            display: none;
+    
+    }
+    .hero_page{
+        width: 100%;
+        height: 300px;
+        background-image: url(./assets/images/image-web-3-mobile.jpg);
+    }
+    .hero_page img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        object-position: center;
+       display: none;
+    }
+    .image_mobile{
+        display: flex;
+    }
+    .section_1{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .h1_writeup{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100%;
+        padding-top: 10px;
+    }
+    .div_1{
+        width: 100%;
+        font-size: 30px;
+        height: 50%;
+
+    }
+    .div_2{
+        width: 100%;
+        word-spacing: 3px;
+        font-size: 18px;
+        page-break-after: auto;
+    }
+    .div_2 button{
+        margin-top: 30px;
+        width: 200px;
+    }
+    aside{
+        width: 100%;
+        margin-left: 0;
+        transform: scale(0.95);
+    }
+    .rest_story{
+        flex-direction: column;
+        transform: scale(0.85);
+        gap: 20px;
+
+    }
+}
+@media screen and (max-width:375px ){
+    body{
+        margin: 5px;
+        padding: 0;
+        width: 375px
+    }
+}
+@media screen and (max-width:325px){
+    body{
+        margin: 5px;
+        padding: 0;
+        width: 320px
+    }
+}
